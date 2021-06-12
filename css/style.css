@@ -1,8 +1,15 @@
-html {
-  overflow-x: hidden;
-}
-
-body, .ff-sans-serif {
+@charset "UTF-8";
+/* 
+  Guía de estilos:
+  1. Imports
+  2. Variables
+  3. General
+  4. Aside-left
+  5. Section-principal
+  6. Aside-right
+*/
+/* Variables */
+.ff-sans-serif {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -22,7 +29,41 @@ body, .ff-sans-serif {
   font-family: OpenDyslexic, sans-serif;
 }
 
-/* */
+/* General */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #f8f9fa;
+}
+
+.fs-1 {
+  font-size: 1.5rem !important;
+}
+
+.fs-2 {
+  font-size: 1rem !important;
+}
+
+.fs-3 {
+  font-size: 0.75rem !important;
+}
+
+.fs-4 {
+  font-size: 0.5rem !important;
+}
+
+.fs-5 {
+  font-size: 0.25rem !important;
+}
+
+.fs-6 {
+  font-size: 0.125rem !important;
+}
+
+/* Header */
 .img-user-nav {
   border-radius: 100%;
   height: 32px;
@@ -40,15 +81,42 @@ body, .ff-sans-serif {
   border: 2px solid black;
 }
 
-/* */
-.img-user {
+/* Aside-left */
+#aside-left .list-group {
+  background-color: #f8f9fa;
+  border: 0px none transparent !important;
+}
+
+#aside-left .list-group .list-group-item {
+  background-color: #f8f9fa;
+  border: 0px none transparent;
+}
+
+#aside-left #popular-tags {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+/* Section-principal */
+#section-principal .img-user {
   border-radius: 100%;
   height: 32px;
   width: 32px;
 }
 
-/* */
-span {
-  color: #3b49df;
+/* Aside-right */
+#aside-right span {
+  color: blueviolet;
+}
+
+#aside-right .card-img-top {
+  border: 0px none transparent;
+}
+
+/* Testing */
+#aside-left,
+#section-principal,
+#aside-right {
+  min-height: 300px;
 }
 /*# sourceMappingURL=style.css.map */
