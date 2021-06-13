@@ -104,6 +104,22 @@ body {
   width: 32px;
 }
 
+#section-principal .hoover-cards-link:hover {
+  color: #080887;
+}
+
+#section-principal .btn-card-save {
+  color: black;
+  background: #d7e0ea;
+  border: none;
+  margin-left: 3px;
+}
+
+#section-principal .btn-card-save:hover {
+  color: black;
+  background: #b5bdc4;
+}
+
 /* Aside-right */
 #aside-right span {
   color: blueviolet;

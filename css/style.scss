@@ -110,6 +110,16 @@ body {
   .hoover-cards-link:hover {
     color: hsl(240, 89%, 28%);
   }
+  .btn-card-save{
+    color: black;
+    background: hsl(210, 30%, 88%);
+    border: none;
+    margin-left: 3px;
+    &:hover{
+      color: black;
+      background: hsl(208, 11%, 74%);
+    }
+  }
 }
 
 /* Aside-right */

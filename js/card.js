@@ -146,7 +146,7 @@ for (let card of cards) {
                         17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
                         </path>
                         </svg>
-                        <span>${card.reactions} <span class="d-none d-lg-inline">reactions</span></span>
+                        <span>${card.reactions}<span class="d-none d-lg-inline"> reactions</span></span>
                       </a>
                       
                       
@@ -159,14 +159,14 @@ for (let card of cards) {
                         15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0
                         2.707 1.846 4.475 6 6.36V15.5z"></path>
                         </svg>
-                        <span>${card.comments} <span class="d-none d-lg-inline">comments</span></span>
+                        <span>${card.comments}<span class="d-none d-lg-inline"> comments</span></span>
                       </a>
                   </div>
                 <!-- btn reactions comments -->
 
                 <div class="col-5 col-md-6 col-lg-4 d-flex justify-content-end align-items-center pl-0">
-                    <span><small class="text-muted">${card.minutes_ago} mins ago</small></span>
-                    <button class="btn btn-light">Save</button>
+                    <span><small class="text-muted fs-3">${card.minutes_ago} mins ago</small></span>
+                    <button class="btn btn-outline-secondary btn-card-save mr-1">Save</button>
                 </div>
               </div>
               <!-- sp-card-bottom-btns-end -->
