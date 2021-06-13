@@ -122,10 +122,34 @@ body {
 
 /* Aside-right */
 #aside-right span {
-  color: blueviolet;
+  color: blue;
 }
 
-#aside-right .card-img-top {
+#aside-right b {
+  background-color: #3b49df;
+  color: white;
+  font-family: monospace;
+  padding: 00.25rem;
+  border-radius: 5px;
+  border: 1px solid;
+  text-align: center;
+}
+
+#aside-right strong {
+  font-weight: 500;
+  color: blue;
+}
+
+#aside-right small {
+  color: #64707d;
+  font-size: 0rem;
+}
+
+#aside-right .card-link.btn-white {
+  display: block;
+}
+
+#aside-right .card-card-body {
   border: 0px none transparent;
 }
 
