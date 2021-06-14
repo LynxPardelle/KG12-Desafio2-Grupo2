@@ -133,12 +133,39 @@ body {
 /* Aside-right */
 #aside-right {
   span {
-    color: blueviolet;
+    color: blue;
+    
   }
-  .card-img-top {
+
+  b{
+    background-color:  #3b49df;;
+    color: white;
+    font-family: monospace;
+    padding-top: 4px;
+    border-radius: 5px;
+    border: 1px solid;
+    text-align: center;
+  }
+  strong{
+    font-weight: 500;
+    color: blue;
+  }
+  
+  small{
+    color: #64707d ;
+    font-size: 0rem;
+  }
+ a.card-link.btn-white{
+   padding: 0.75rem;
+ }
+
+  }
+  .card-card-body {
     border: 0px none transparent;
   }
-}
+
+
+  
 
 /* Testing */
 #aside-left,
