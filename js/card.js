@@ -232,7 +232,7 @@ for (let card of cards) {
   card_innerhtml =
     card_innerhtml +
     `
-          <div class="card-body ">
+          <div class="card-body p-2 p-md-3">
             <!-- sp-img-user-&-user-name -->
             <div class="row">
               <div class="col-2 pr-0 pr-sm-4 pr-md-2 col-sm-1">
@@ -264,9 +264,9 @@ for (let card of cards) {
               </div>
               
               <!-- sp-card-bottom-btns-start -->
-              <div class="row d-flex justify-content-between">
+              <div class="d-flex justify-content-between">
                 <!-- btn reactions comments -->
-                  <div class="col-7 col-md-6 col-lg-8 d-flex justify-content-start align-items-center">
+                  <div class="col-7 px-0 col-md-6 col-lg-8 d-flex justify-content-start align-items-center">
                       <a href="#" class="btn btn-light fs-3 d-inline">
                         <!-- Icon Heart -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
@@ -295,7 +295,7 @@ for (let card of cards) {
                   </div>
                 <!-- btn reactions comments -->
 
-                <div class="col-5 col-md-6 col-lg-4 d-flex justify-content-end align-items-center pl-0">
+                <div class="col-5 col-md-6 col-lg-4 px-0 d-flex justify-content-end align-items-center pl-0">
                     <span><small class="text-muted fs-3">${card.minutes_ago} mins ago</small></span>
                     <button class="btn btn-outline-secondary btn-card-save mr-1">Save</button>
                 </div>

@@ -78,6 +78,10 @@ body {
   font-size: 1.5rem !important;
 }
 
+.fs-1_5 {
+  font-size: 1.25rem !important;
+}
+
 .fs-2 {
   font-size: 1rem !important;
 }
@@ -144,20 +148,29 @@ body {
 }
 
 /* 3. Header */
-.img-user-nav {
-  border-radius: 100%;
-  height: 32px;
-  width: 32px;
-}
+/* 8. Post-example */
+header {
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 
-.dropdown-toggle-with-img-nav:after {
-  display: none;
-}
+  .img-user-nav {
+    border-radius: 100%;
+    height: 32px;
+    width: 32px;
+  }
 
-.dropdown-menu-nav-user {
-  width: 95vw;
-  box-shadow: 4px 4px 0 black;
-  border: 2px solid black;
+  .dropdown-toggle-with-img-nav:after {
+    display: none;
+  }
+
+  .dropdown-menu-nav-user {
+    width: 250px;
+    box-shadow: 4px 4px 0 black;
+    border: 2px solid black;
+  }
 }
 
 /* 4. Aside-left */
@@ -171,8 +184,13 @@ body {
       border: 0px none transparent;
       padding: 0;
     }
-    .icon-aside-left {
-      color: #64707d;
+  }
+
+  .icon-aside-left {
+    color: #64707d;
+    cursor: pointer;
+    &:hover {
+      color: darken($color: #64707d, $amount: 50);
     }
   }
 
@@ -330,22 +348,22 @@ body {
     padding: 0.75rem;
   }
 
-  .card-card-body {
-    border: 0px none transparent;
+  .card {
+    background-color: #f8f9fa;
+    .card-body {
+      border: 0px none transparent;
+
+      .btn-aside-left-to-hover {
+        &:hover {
+          background: lighten($color: #f8f9fa, $amount: 25);
+        }
+      }
+    }
   }
 }
 
 /* 7. Post-example */
 #post_example {
-  /* 8. Post-example */
-  header {
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  }
-
   /* 9. Aside_right_PE */
   #aside_right_PE {
     #A_R_PE_toolbar {
@@ -477,6 +495,7 @@ body {
             background: hsl(213, 11%, 84%);
           }
         }
+
         .user_info_and_things-read-next {
           img {
             width: 65px;
@@ -494,6 +513,58 @@ body {
   /* 11. Aside_left_PE */
   #aside_left_PE {
     height: calc(100vh - 66px);
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      border-radius: 100%;
+      border: 0px none transparent;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+    }
+    .post-img-user {
+      margin-right: 0.7rem;
+      margin-bottom: 0.7rem;
+    }
+    .post-card-username {
+      border-top: 35px solid hsl(338, 68%, 20%);
+      button .follow-button-user {
+        background: rgb(67, 70, 255);
+        &:hover {
+          background: rgb(50, 62, 190);
+        }
+      }
+      .post-img-user {
+        margin-top: -32.5px;
+        img {
+          width: 45px;
+          height: 45px;
+        }
+        p {
+          // line-height: 45px;
+          margin-bottom: 0;
+        }
+      }
+      // .left-post-img-user-container {
+      // }
+
+      .right-user-img-card {
+        // position: absolute;
+        // top: -10%;
+        height: 55px;
+        width: 55px;
+      }
+    }
   }
 
   /* 12. Footer_Pe */

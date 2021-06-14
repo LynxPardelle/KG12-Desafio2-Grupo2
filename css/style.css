@@ -76,6 +76,10 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.5rem !important;
 }
 
+.fs-1_5 {
+  font-size: 1.25rem !important;
+}
+
 .fs-2 {
   font-size: 1rem !important;
 }
@@ -147,18 +151,28 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* 3. Header */
-.img-user-nav {
+/* 8. Post-example */
+header {
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+header .img-user-nav {
   border-radius: 100%;
   height: 32px;
   width: 32px;
 }
 
-.dropdown-toggle-with-img-nav:after {
+header .dropdown-toggle-with-img-nav:after {
   display: none;
 }
 
-.dropdown-menu-nav-user {
-  width: 95vw;
+header .dropdown-menu-nav-user {
+  width: 250px;
   -webkit-box-shadow: 4px 4px 0 black;
           box-shadow: 4px 4px 0 black;
   border: 2px solid black;
@@ -176,8 +190,13 @@ body::-webkit-scrollbar-thumb {
   padding: 0;
 }
 
-#aside-left .list-group .icon-aside-left {
+#aside-left .icon-aside-left {
   color: #64707d;
+  cursor: pointer;
+}
+
+#aside-left .icon-aside-left:hover {
+  color: black;
 }
 
 #aside-left #popular-tags {
@@ -330,26 +349,24 @@ body::-webkit-scrollbar-thumb {
   padding: 0.75rem;
 }
 
-#aside-right .card-card-body {
+#aside-right .card {
+  background-color: #f8f9fa;
+}
+
+#aside-right .card .card-body {
   border: 0px none transparent;
+}
+
+#aside-right .card .card-body .btn-aside-left-to-hover:hover {
+  background: white;
 }
 
 /* 7. Post-example */
 #post_example {
-  /* 8. Post-example */
   /* 9. Aside_right_PE */
   /* 10. Section_principal_PE */
   /* 11. Aside_left_PE */
   /* 12. Footer_Pe */
-}
-
-#post_example header {
-  top: 0;
-  z-index: 10;
-  width: 100%;
-  background-color: white;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 #post_example #aside_right_PE #A_R_PE_toolbar {
@@ -494,6 +511,60 @@ body::-webkit-scrollbar-thumb {
 
 #post_example #aside_left_PE {
   height: calc(100vh - 66px);
+  overflow-y: scroll;
+}
+
+#post_example #aside_left_PE::-webkit-scrollbar {
+  width: 0px;
+}
+
+#post_example #aside_left_PE::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#post_example #aside_left_PE::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 100%;
+  border: 0px none transparent;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+#post_example #aside_left_PE .post-img-user {
+  margin-right: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+#post_example #aside_left_PE .post-card-username {
+  border-top: 35px solid #56102a;
+}
+
+#post_example #aside_left_PE .post-card-username button .follow-button-user {
+  background: #4346ff;
+}
+
+#post_example #aside_left_PE .post-card-username button .follow-button-user:hover {
+  background: #323ebe;
+}
+
+#post_example #aside_left_PE .post-card-username .post-img-user {
+  margin-top: -32.5px;
+}
+
+#post_example #aside_left_PE .post-card-username .post-img-user img {
+  width: 45px;
+  height: 45px;
+}
+
+#post_example #aside_left_PE .post-card-username .post-img-user p {
+  margin-bottom: 0;
+}
+
+#post_example #aside_left_PE .post-card-username .right-user-img-card {
+  height: 55px;
+  width: 55px;
 }
 
 #post_example footer {
