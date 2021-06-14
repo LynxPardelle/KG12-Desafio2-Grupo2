@@ -91,12 +91,57 @@ body {
     .list-group-item {
       background-color: #f8f9fa;
       border: 0px none transparent;
+      padding: 0;
     }
   }
 
   #popular-tags {
     height: 400px;
     overflow-y: scroll;
+  }
+
+  #more_checkbox_aside_left {
+    display: block;
+    bottom: -15px;
+    background-color: red;
+    height: 38px;
+    z-index: 10;
+  }
+
+  #more_checkbox_aside_left::after {
+    content: "More ...";
+    padding: 6px 12px 6px 42px;
+    background-color: #f8f9fa;
+    color: lighten($color: #08090a, $amount: 50);
+    display: block;
+    width: 100%;
+    height: 38px;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+  }
+
+  #more_checkbox_aside_left:hover::after {
+    background-color: #e2e6ea;
+  }
+
+  #more_checkbox_aside_left:not(:checked) ~ li {
+    display: none;
+  }
+
+  #more_checkbox_aside_left:checked {
+    display: none;
+  }
+
+  #more_checkbox_aside_left:checked ~ #pls_d_none_in_check {
+    display: none;
+  }
+
+  #more_checkbox_aside_left:checked ~ li {
+    display: block;
   }
 }
 
@@ -113,12 +158,12 @@ body {
       color: hsl(235, 58%, 47%);
     }
   }
-  .btn-card-save{
+  .btn-card-save {
     color: black;
     background: hsl(210, 30%, 88%);
     border: none;
     margin-left: 3px;
-    &:hover{
+    &:hover {
       color: black;
       background: hsl(208, 11%, 74%);
     }
@@ -134,11 +179,10 @@ body {
 #aside-right {
   span {
     color: blue;
-    
   }
 
-  b{
-    background-color:  #3b49df;;
+  b {
+    background-color: #3b49df;
     color: white;
     font-family: monospace;
     padding-top: 4px;
@@ -146,26 +190,23 @@ body {
     border: 1px solid;
     text-align: center;
   }
-  strong{
+  strong {
     font-weight: 500;
     color: blue;
   }
-  
-  small{
-    color: #64707d ;
+
+  small {
+    color: #64707d;
     font-size: 0rem;
   }
- a.card-link.btn-white{
-   padding: 0.75rem;
- }
-
+  a.card-link.btn-white {
+    padding: 0.75rem;
   }
+
   .card-card-body {
     border: 0px none transparent;
   }
 
-
-  
 
 /* Testing */
 #aside-left,
