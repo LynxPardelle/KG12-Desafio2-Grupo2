@@ -115,15 +115,15 @@ for (let card of cards) {
             
             <!-- sp-bot card -->
             <div class="ml-0 ml-sm-4 ml-md-5" id="card_info">
-              <h2 class="card-title"><a class="text-dark text-decoration-none hoover-cards-link" href="#">${card.card_title}</a></h2>
+              <h2 class="card-title"><a class="text-decoration-none card-title-hover" href="#">${card.card_title}</a></h2>
               <!--# Hashtags #-->
               <div class="mb-2">`;
 
   for (let tag of card.tags) {
     card_innerhtml =
-      card_innerhtml +
+      card_innerhtml +S
       `
-      <a href="#"><small class="text-muted mr-2">#${tag.replace(",", "")} </small></a>
+      <a class="text-decoration-none post-hash-tag"href="#"><small class="text-muted mr-2">#${tag.replace(",", "")} </small></a>
       `;
   }
 

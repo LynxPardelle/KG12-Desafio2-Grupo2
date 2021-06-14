@@ -104,8 +104,12 @@ body {
   width: 32px;
 }
 
-#section-principal .hoover-cards-link:hover {
-  color: #080887;
+#section-principal .card-title-hover {
+  color: black;
+}
+
+#section-principal .card-title-hover:hover {
+  color: #323ebd;
 }
 
 #section-principal .btn-card-save {
@@ -118,6 +122,10 @@ body {
 #section-principal .btn-card-save:hover {
   color: black;
   background: #b5bdc4;
+}
+
+#section-principal .post-hashtag:hover {
+  color: black;
 }
 
 /* Aside-right */

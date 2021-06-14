@@ -107,8 +107,11 @@ body {
     height: 32px;
     width: 32px;
   }
-  .hoover-cards-link:hover {
-    color: hsl(240, 89%, 28%);
+  .card-title-hover{
+    color: black;
+    &:hover{
+      color: hsl(235, 58%, 47%);
+    }
   }
   .btn-card-save{
     color: black;
@@ -118,6 +121,11 @@ body {
     &:hover{
       color: black;
       background: hsl(208, 11%, 74%);
+    }
+  }
+  .post-hashtag{
+    &:hover{
+      color:black;
     }
   }
 }
